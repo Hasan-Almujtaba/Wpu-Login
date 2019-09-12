@@ -22,7 +22,7 @@ class User extends CI_Controller {
 		$this->load->view('templates/sidebar', $data);	
 		$this->load->view('templates/topbar', $data);	
 		$this->load->view('user/index', $data);
-		$this->load->view('templates/footer',);
+		$this->load->view('templates/footer', $data);
 
 	}
 
@@ -39,7 +39,7 @@ class User extends CI_Controller {
 			$this->load->view('templates/sidebar', $data);	
 			$this->load->view('templates/topbar', $data);	
 			$this->load->view('user/edit', $data);
-			$this->load->view('templates/footer',);
+			$this->load->view('templates/footer', $data);
 		} else {
 			$name = $this->input->post('name');
 			$email = $this->input->post('email');
@@ -97,7 +97,7 @@ class User extends CI_Controller {
 			$this->load->view('templates/sidebar', $data);	
 			$this->load->view('templates/topbar', $data);	
 			$this->load->view('user/changepassword', $data);
-			$this->load->view('templates/footer',);
+			$this->load->view('templates/footer', $data);
 		} else {
 
 			$currentPassword = $this->input->post('currentPassword');

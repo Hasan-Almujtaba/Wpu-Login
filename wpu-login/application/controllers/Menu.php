@@ -25,7 +25,7 @@ class Menu extends CI_Controller {
 			$this->load->view('templates/sidebar', $data);	
 			$this->load->view('templates/topbar', $data);	
 			$this->load->view('menu/index', $data);
-			$this->load->view('templates/footer',);
+			$this->load->view('templates/footer', $data);
 		}
 		else {
 			$this->Menu_model->addMenu();
@@ -53,7 +53,7 @@ class Menu extends CI_Controller {
 			$this->load->view('templates/sidebar', $data);	
 			$this->load->view('templates/topbar', $data);	
 			$this->load->view('menu/submenu', $data);
-			$this->load->view('templates/footer',);
+			$this->load->view('templates/footer', $data);
 		}
 		else {
 

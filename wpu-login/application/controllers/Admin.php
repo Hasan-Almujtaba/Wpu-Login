@@ -22,7 +22,7 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/sidebar', $data);	
 		$this->load->view('templates/topbar', $data);	
 		$this->load->view('admin/index', $data);
-		$this->load->view('templates/footer',);
+		$this->load->view('templates/footer',$data);
 
 	}
 
@@ -37,7 +37,7 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/sidebar', $data);	
 		$this->load->view('templates/topbar', $data);	
 		$this->load->view('admin/role', $data);
-		$this->load->view('templates/footer',);
+		$this->load->view('templates/footer', $data);
 
 	}
 
@@ -53,7 +53,7 @@ class Admin extends CI_Controller {
 		$this->load->view('templates/sidebar', $data);	
 		$this->load->view('templates/topbar', $data);	
 		$this->load->view('admin/role-access', $data);
-		$this->load->view('templates/footer',);
+		$this->load->view('templates/footer', $data);
 
 	}
 
